@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Human(name, age, ) {
+            this.name = name;
+            this.age = age;
+
+
+            this.print = function () {
+                document.write("Имя: " + this.name + "Возраст" + this.age);
+            }
+        }
+        Human.MaxAge = 30;
+        Human.getName = function () {
+            return new Human("Sarah", 23);
+        }
+        var man = new Human("Olga", 45)
+        var man1 = new Human("Boris", 18)
+        man.print();
+        document.write("<hr>");
+        man1.print();
+        document.write("<hr>");
+
+
+
+        Human.getName().print();
+        document.write("<hr>");
+    </script>
+</body>
+
+</html>
